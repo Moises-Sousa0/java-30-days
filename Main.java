@@ -1,5 +1,8 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.io.FileWriter;
+import java.io.BufferedWriter;
+import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) {
@@ -92,10 +95,36 @@ public class Main {
                     }
                     break;
 
+                case 0:
+                    System.out.println("\n\nSaindo...\n\n");
+                    SalvarUsuarioEmArquivo(usuarios);
+                    break;
             }
 
             }
 
+        }
+
+        public static void SalvarUsuarioEmArquivo(ArrayList<Usuario> usuarios){
+            try {
+                FileWriter fw = new FileWriter("usuarios.txt", true);
+                BufferedWriter bw = new BufferedWriter(fw);
+
+                for (Usuario u : usuarios) {
+                    bw.write("Nome: " + u.nome);
+                    bw.newLine();
+                    bw.write("Idade: " + u.idade);
+                    bw.newLine();
+                    bw.write("Email: " + u.email);
+                    bw.newLine();
+                    bw.write("=====================");
+                    bw.newLine();
+                }
+
+                bw.close();
+            } catch (IOException e) {
+                System.out.println("Erro em salvar o arquivo");
+            }
         }
 
     }
