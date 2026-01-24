@@ -1,0 +1,9 @@
+NOME: JavaSistemaCli
+
+O QUE O SISTEMA VAI FAZER: Sistema em java no terminal para cadastrar usuarios, listar, remover e salvar dados
+
+3 - menu inicial vai ter: cadastrar, listar, remover e sair
+
+4 - dados vão ser: nome, idade, email
+
+
