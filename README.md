@@ -1,4 +1,4 @@
-# Java 30 Days
+# Java 
 
 Projeto pessoal para retomar os estudos em Java e construir consistência.
 A ideia é desenvolver um sistema simples no terminal (CLI), evoluindo aos poucos.
