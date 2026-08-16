@@ -14,6 +14,7 @@ public class Livro2 {
         } else {
             this.anoPublicado = anoPublicado;
         }
+        this.disponivel = true;
         totalLivros++;
     }
 
@@ -49,11 +50,13 @@ public class Livro2 {
 
 
 
-    public boolean getDisponivel(){
+    public boolean isDisponivel(){
         return this.disponivel;
     }
 
-    public void isDisponivel(boolean disponivel){
+    public void setDisponivel(boolean disponivel){
         this.disponivel = disponivel;
     }
+
+
 }
