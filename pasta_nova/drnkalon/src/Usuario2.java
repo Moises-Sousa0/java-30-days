@@ -41,5 +41,10 @@ public class Usuario2 {
         }
     }
 
+    public interface Emprestavel {
+        void emprestar();
+    }
+
+
 }
 
