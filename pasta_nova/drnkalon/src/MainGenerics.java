@@ -2,14 +2,36 @@ import java.util.*;
 
 public class MainGenerics {
     public static void main(String[] args) {
-        String[] pecas = new String[3];
-         pecas[0] = "Oleo";
-         pecas[1] = "Pastilha";
-         pecas[2] = "Filtro";
+        /*
+        List<String> pecas = new ArrayList<>();
+        pecas.add("oleo");
+        pecas.add("oleo");
+        pecas.add("pneu");
+        pecas.add("pastilha");
+        pecas.add("vela");
+        pecas.get(0);
+        System.out.println(pecas);
+        pecas.remove(0);
+        System.out.println(pecas);
+        */
 
-        System.out.println(pecas[0]);
-        System.out.println(pecas[1]);
-        System.out.println(pecas[2]);
+        /*
+        Set<String> clientes = new HashSet<>();
+        clientes.add("Joao");
+        clientes.add("Marcelo");
+        clientes.add("Carlos");
+        clientes.add("Joao");
+        clientes.add("joao");
+        System.out.println(clientes.contains("Joao"));
+        System.out.println(clientes.size());
+        */
+
+        Map<String, Integer> estoque = new HashMap<>();
+        estoque.put("Chave de fenda", 10);
+        estoque.put("Chave Y", 30);
+        estoque.put("Chave T", 24);
+        System.out.println(estoque.get("Chave Y"));
 
     }
+
 }
