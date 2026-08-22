@@ -7,7 +7,11 @@ public class MainMissaoNinja {
         }
 
         ChakraJutsu teste = new ChakraJutsu();
-        teste.usarJutsu(20, 20);
-        
+        try {
+            teste.usarJutsu(20, 10);
+        } catch (ChakraInsuficienteException e){
+            System.out.println(e.getMessage());
+        }
+
     }
 }

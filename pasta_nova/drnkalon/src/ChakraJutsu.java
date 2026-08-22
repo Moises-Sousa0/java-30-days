@@ -3,5 +3,6 @@ public class ChakraJutsu {
         if (chakraNecessario > chakraDisponivel){
             throw new ChakraInsuficienteException("Chakra abaixo do necessário");
         }
+        System.out.println("Jutsu usado");
     }
 }
