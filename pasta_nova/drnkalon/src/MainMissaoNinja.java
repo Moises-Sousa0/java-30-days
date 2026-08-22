@@ -5,5 +5,9 @@ public class MainMissaoNinja {
         } catch (MissaoException e){
             System.out.println(e.getMessage());
         }
+
+        ChakraJutsu teste = new ChakraJutsu();
+        teste.usarJutsu(20, 20);
+        
     }
 }
